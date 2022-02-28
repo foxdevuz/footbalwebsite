@@ -64,6 +64,25 @@ nav .nav__items {
   justify-content: space-around;
   width: 50%;
 }
+nav .social__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+nav .social__icons .icon {
+  transition: all 0.8s;
+  color: #d2d2d2;
+  font-size: 1.5rem;
+}
+nav .social__icons .tg:hover {
+  color: #0088cc;
+}
+nav .social__icons .yt:hover {
+  color: #ff0000;
+}
+nav .social__icons .fb:hover {
+  color: #1877f2;
+}
 
 .main {
   width: 100%;
@@ -205,6 +224,10 @@ nav .nav__items {
     font-size: 14px;
   }
 
+  .social__icons {
+    display: none !important;
+  }
+
   .info {
     position: absolute !important;
     top: 50% !important;
@@ -230,6 +253,31 @@ nav .nav__items {
   #openNav {
     display: inline-block;
   }
+
+  .social__icons1 {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translate(-80%, -50%);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+  }
+  .social__icons1 .icon {
+    transition: all 0.8s;
+    color: #d2d2d2;
+    font-size: 1.5rem;
+  }
+  .social__icons1 .tg:hover {
+    color: #0088cc;
+  }
+  .social__icons1 .yt:hover {
+    color: #ff0000;
+  }
+  .social__icons1 .fb:hover {
+    color: #1877f2;
+  }
 }
 .showNav {
   transform: translateY(0) !important;
@@ -241,6 +289,7 @@ nav .nav__items {
   display: block;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   transition: all 0.8s !important;
 }
 

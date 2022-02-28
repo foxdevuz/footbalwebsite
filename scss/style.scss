@@ -76,6 +76,27 @@ nav {
         width: 50%;
        
     }
+    .social__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        .icon {
+            transition: all 0.8s;
+            color: #d2d2d2;
+            font: {
+                size: 1.5rem;
+            }
+        }
+        .tg:hover {
+            color: #0088cc;
+        }
+        .yt:hover {
+            color: #ff0000;
+        }
+        .fb:hover {
+            color: #1877f2;
+        }
+    }
 }
 // main section
 .main {
@@ -227,6 +248,9 @@ nav {
     html {
         font-size: 14px;
     }
+    .social__icons {
+        display: none !important;
+    }
     .info {
         position: absolute !important;
         top: 50% !important;
@@ -248,6 +272,32 @@ nav {
     #openNav {
         display: inline-block;
     }
+    .social__icons1 {
+        position: absolute;
+        top: 80%;
+        left: 65%;
+        transform: translate(-80%, -50%);
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+        .icon {
+            transition: all 0.8s;
+            color: #d2d2d2;
+            font: {
+                size: 1.5rem;
+            }
+        }
+        .tg:hover {
+            color: #0088cc;
+        }
+        .yt:hover {
+            color: #ff0000;
+        }
+        .fb:hover {
+            color: #1877f2;
+        }
+    }
 }
 
 // CLass for JS
@@ -261,6 +311,7 @@ nav {
     display: block;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     transition: all 0.8s !important;
     
 }
